@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1=title
+  input#search(type="search", placeholder="SearchMe!")
+  h2#results
+  include template.html
+
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+  script(src="/javascripts/main.js")
+  script(src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js")
